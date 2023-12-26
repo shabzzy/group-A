@@ -1,15 +1,18 @@
-function calculateProfit() {
-    var quantity = parseFloat(document.getElementById("cropQuantity").value);
-    var price = parseFloat(document.getElementById("cropPrice").value);
-    var totalCost = parseFloat(document.getElementById("totalCost").value) || 0;
+// Simulated user credentials (replace with actual authentication logic)
+const validUsername = "groupA";
+const validPassword = "animalproduction";
 
-    if (isNaN(quantity) || isNaN(price) || isNaN(totalCost)) {
-        alert("Please enter valid numbers for quantity, price, and total cost.");
-        return;
+function login() {
+    const usernameInput = document.getElementById('username').value;
+    const passwordInput = document.getElementById('password').value;
+
+    // Simulated authentication logic (replace with actual authentication logic)
+    if (usernameInput === validUsername && passwordInput === validPassword) {
+        
+
+        // Redirect to the profit app
+        window.location.href = "./profit.html"; // Replace with the actual filename or path to your irrigation app
+    } else {
+        alert("Invalid username or password. Please try again.");
     }
-
-    var totalRevenue = quantity * price;
-    var profit = totalRevenue - totalCost;
-
-    document.getElementById("result").innerHTML = "Profit: $" + profit.toFixed(2);
 }

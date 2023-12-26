@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./profit.css">
+    <title>Agricultural Profit Calculator</title>
+</head>
+<style>
+    @font-face {
+      font-family: yellowtail;
+      src: url(./font/Yellowtail-Regular.ttf);
+    }
+  </style>
+<body>
+    <div class="calculator">
+        <div class="credit">
+            <p>Agricultural Profit Calculator</p>
+        </div>
+        <label for="cropQuantity">Quantity of Crops (kg):</label>
+        <input type="text" id="cropQuantity" placeholder="Enter quantity">
+
+        <label for="cropPrice">Price per Kilogram ($):</label>
+        <input type="text" id="cropPrice" placeholder="Enter price">
+
+        <label for="totalCost">Total Cost ($):</label>
+        <input type="text" id="totalCost" placeholder="Enter total cost">
+
+        <button onclick="calculateProfit()">Calculate Profit</button>
+
+        <div id="result"></div>
+
+        <div class="credit">
+            <p>Project by Group A</p>
+        </div>
+    </div>
+    <script src="./profit.js"></script>
+</body>
+</html>

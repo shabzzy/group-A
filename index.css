@@ -1,69 +1,68 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0;
+    background: url(./WhatsApp\ Image\ 2023-12-26\ at\ 07.53.34_2e943867.jpg) center/cover no-repeat;
 }
 
-.calculator {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.login-container {
     text-align: center;
-    width: 300px;
+    background-color: #ffffff; /* Form background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
     display: block;
-    margin: 10px 0 5px 0;
-    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 input {
-    width: calc(100% - 22px);
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 5px;
+    width: 200px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #3498db; /* Input border color */
+    border-radius: 5px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 16px;
+    width: 200px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #2ecc71; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #27ae60; /* Button hover color */
 }
 
-#result {
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-.credit{
-    font-family: yellowtail;
+a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
 }
 
-/* Media Query for responsiveness */
-@media only screen and (max-width: 767px) {
-    .calculator {
-        width: 90%;
-    }
-
-    input {
-        width: 100%;
-    }
+a:hover {
+    text-decoration: underline;
 }
